@@ -1,0 +1,16 @@
+(PAD 0):	1	(SUMS 0):	0
+(PAD 1):	1	(SUMS 1):	0
+(PAD 2):	1	(SUMS 2):	0
+(PAD 3):	2	(SUMS 3):	1	
+(PAD 4):	2	(SUMS 4):	1
+(PAD 5):	3	(SUMS 5):	2
+(PAD 6):	4	(SUMS 6):	3
+(PAD 7):	5	(SUMS 7):	4
+(PAD 8):	7	(SUMS 8):	6
+(PAD 9):	9	(SUMS 9):	8
+
+Question 1
+For larger values, the program freezes and does not output an answer. Some answers that might satisfy as to why this happens might be because of stack overflow or the machine takes a long time to compute the answer. I don't think the latter is true, since the operations are relatively simple and low values of N are computed incredibly quick. I think the more likely answer is stack overflow, considering we had to implement PAD using recursion, this would result in a full binary tree with around O(2^N) nodes.
+
+Question 2
+The values of (SUMS N) is simply (PAD N) - 1. The 0th, 1st, and 2nd index do not require any additions as they are base cases. The numbers after those inital 3 in the Padovan sequence do need to be calculated. The values line up to be exactly a value of the sequence to be one plus the operations needed to calculate it.

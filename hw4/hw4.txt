@@ -1,0 +1,25 @@
+graph1.txt, 3 colors: Unsatisfiable
+graph1.txt, 4 colors: Satisfiable
+
+This tells us that the minimum amount of edges for all
+nodes within the graph is 3. This is derived from the
+minimum amount of colors needed to solve the graph and
+subtracting one for the minimum edge count.
+
+The following is a viable solution:
+1 - Red
+2 - Blue
+3 - Green
+4 - Yellow
+
+Node 1 - Yellow
+Node 2 - Red
+Node 3 - Yellow
+Node 4 - Green
+Node 5 - Red
+Node 6 - Blue
+Node 7 - Green
+
+For graph2.txt, the minimum amount of colors needed to solve the
+graph would be 8 colors, anything less than that would be
+unsatisfiable
